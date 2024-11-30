@@ -1,6 +1,3 @@
-Here’s the report rewritten in a README.md format suitable for a GitHub repository:
-
----
 
 # Interactive Regression Application
 
