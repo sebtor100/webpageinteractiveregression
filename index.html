@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Regression App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Regression Application</h1>
+    <canvas id="canvas" width="800" height="500"></canvas>
+    <div class="mse-display">
+        <p id="linearMSE">Linear MSE: N/A</p>
+        <p id="polyMSE">Polynomial MSE: N/A</p>
+    </div>
+    <div class="controls">
+        <button id="fitLinear">Fit Linear Regression</button>
+        <label for="degree">Polynomial Degree:</label>
+        <select id="degree">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5" selected>5</option>
+        </select>
+        <button id="fitPoly">Fit Polynomial Regression</button>
+        <button id="reset">Start Again</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
